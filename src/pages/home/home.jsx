@@ -4,8 +4,11 @@ import Partners from "../../components/partersComponent/partners";
 import SlideCards from "../../components/placeCardSliderComponent/slideCards";
 import AboutComponent from "../../components/aboutComponent/aboutComponent";
 import Articles from "../../components/articles/articles";
+import changeTitle from "../../middleware/changeTitle";
 
 function Home() {
+    changeTitle("Home Page")
+
     return (
         <>
             <Header
