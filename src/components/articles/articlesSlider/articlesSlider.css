@@ -1,0 +1,107 @@
+.articles-slider-img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+
+.articles-slider-img img{
+    width: 384px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin: 10px 5px;
+}
+
+.article-slider-info{
+    display: flex;
+    padding: 40px 0 20px 100px;
+}
+
+.article-slider-info > h1{
+    font-size: 80px;
+    color: #01d0ba;
+    border-right: 1px solid #AAAAAA;
+    display: inline;
+    padding-right: 36px;
+}
+
+.article-slider-info > div{
+    padding-left: 36px;
+}
+
+.article-slider-info > div h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.article-slider-info > div p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #00000080;
+    max-width: 530px;
+}
+
+.article-p{
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .articles-slider-img img:nth-child(3),
+    .articles-slider-img img:nth-child(4),
+    .articles-slider-img img:nth-child(5),
+    .articles-slider-img img:nth-child(6){
+        display: none!important;
+    }
+    .container-article-slider{
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    .articles-slider-img img:nth-child(2){
+        display: none!important;
+    }
+    .article-slider-info{
+        padding: 10px;
+    }
+
+    .article-slider-info > div p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .article-slider-info{
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .article-slider-info > h1{
+        padding-right: 0;
+        text-align: center;
+        border: none;
+    }
+    .article-slider-info > div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .article-slider-info > div p{
+        font-size: 12px;
+        display: none;
+    }
+    .article-slider-info > h1{
+        font-size: 70px;
+    }
+    .article-p{
+        display: block!important;
+    }
+}

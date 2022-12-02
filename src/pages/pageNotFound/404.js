@@ -1,27 +1,24 @@
 import React, {useEffect} from 'react';
-import Link from "next/link";
-import Head from "next/head";
-import {useRouter} from "next/router";
+import {Link, useNavigate} from "react-router-dom";
+import {ScrollTop} from "../../middleware/scrollTop";
+import changeTitle from "../../middleware/changeTitle";
+import "./404.css"
 
 function PageNotFound() {
+    ScrollTop();
+    changeTitle("Page not found 404");
 
-    const router = useRouter()
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         router.push("/")
-    //     }, 3700)
-    // }, [router])
+    const navigate = useNavigate()
+    useEffect(() => {
+        navigate("/404");
+    }, [window.location.pathname]);
 
     return (
         <>
-            <Head>
-                <title>404 Page Not Found</title>
-            </Head>
-            <div className="position-absolute bg-white w-100 h-100 d-flex justify-content-center align-items-center">
-                <div className="text-center">
+            <div className="page-not-found">
+                <div className="text-center-ntf">
                     <h1>404 | Page Not Found</h1>
-                    <Link href='/' className="btn btn-primary mt-3">back to Home</Link>
+                    <Link to='/' className="btn btn-primary mt-3">back to Home</Link>
                 </div>
             </div>
         </>

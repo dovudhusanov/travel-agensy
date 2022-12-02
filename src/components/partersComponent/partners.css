@@ -1,0 +1,27 @@
+.partners-title{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.partners-title h1{
+    color: #223939;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.partners-title p{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-black);
+    opacity: 30%;
+}
+
+@media screen and (max-width: 425px) {
+    .partners-title h1{
+        font-size: 30px;
+    }
+
+    .partners-title p{
+        font-size: 16px;
+    }
+}

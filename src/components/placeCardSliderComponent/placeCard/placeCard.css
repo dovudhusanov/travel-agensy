@@ -1,0 +1,38 @@
+.place-card-main{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.place-card{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    max-width: 282px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 54px 0px #0000000D;
+    padding: 20px;
+    margin: 10px;
+}
+
+.place-card img{
+    width: 250px;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.place-card h3{
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.place-card p{
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    opacity: 50%;
+}

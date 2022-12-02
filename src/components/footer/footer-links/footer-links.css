@@ -1,0 +1,30 @@
+.footer-links{
+    line-height: 40px;
+}
+
+.footer-links li{
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-links li:nth-child(1){
+    position: relative;
+    top: -4px;
+}
+
+.footer-links li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 852px) {
+    .footer-links{
+        margin: 20px 15px;
+    }
+}

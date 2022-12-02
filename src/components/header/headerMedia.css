@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .header{
+        min-height: 600px;
+    }
+
+    .header-title{
+        justify-content: center;
+    }
+
+    .header-title h1{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .header-slider{
+        margin-top: 200px;
+    }
+    .header-slider button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .header-title h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-title h1{
+        font-size: 26px;
+    }
+}

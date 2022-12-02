@@ -1,0 +1,21 @@
+.about-card-main{
+    width: 100%;
+    background: #F7F9FD;
+    margin-top: 50px;
+}
+
+.about-card-main:nth-child(1) .about-card .price-pack{
+    display: none;
+}
+
+.about-card-main:nth-child(2) .about-card .number-of-many{
+    display: none;
+}
+
+@media screen and (max-width: 880px) {
+    .about-card-main{
+        display: flex;
+        justify-content: center;
+        min-height: 600px;
+    }
+}

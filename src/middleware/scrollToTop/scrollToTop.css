@@ -1,0 +1,32 @@
+.scroll__top-top-parent{
+    position: fixed;
+    bottom: 10px;
+    right: -100%;
+    z-index: 55!important;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.scroll__top-top-parent.scroll{
+    right: 10px;
+    opacity: 1;
+}
+
+.scrollToTopBTn {
+    background-color: var(--main-color);
+    color: var(--color-white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 55!important;
+}
+
+.scrollToTopBTn:hover {
+    cursor: pointer;
+    border-radius: 20px;
+}
