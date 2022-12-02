@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <Header
-                imgUrl="./images/home-banner.jpg"
+                imgUrl="https://lambumiz.ru/upload/iblock/776/8109c5a01c8841a%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
                 headerTitle="Explore The Most Beatiful Place Around The World"
             />
             <Partners />
